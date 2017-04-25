@@ -1,0 +1,26 @@
+
+// Base
+// -------------------
+
+// Used for global styles
+// Or to override certain Atom core styles
+
+// -------------------
+
+
+body {
+	font-size: @font-size;
+	color: @text-color;
+	background-color: @app-background-color;
+}
+
+atom-workspace-axis {
+	border-left: 1px solid @tab-border-color;
+}
+
+atom-pane {
+	border-right: 1px solid @base-background-color;
+	&:last-child {
+		border-right: none;
+	}
+}

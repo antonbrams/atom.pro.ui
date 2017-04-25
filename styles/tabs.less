@@ -1,0 +1,39 @@
+
+// Tabs
+// -------------------
+
+// Displays selectable tabs above the editor.
+// Overrides: atom/tabs
+
+.tab-bar {
+	background-color : @tab-bar-background-color;
+	border-bottom    : 1px solid @base-border-color;
+	display          : table;
+	table-layout     : fixed;
+	width            : 100%;
+	.placeholder {
+		position: absolute;
+	}
+	.tab {
+		display      : table-cell;
+		width        : 100%;
+		text-align   : center;
+		color        : @text-color;
+		height       : @tab-height;
+		line-height  : @tab-height;
+		font-size    : @font-size;
+		border-right : 1px solid @tab-border-color;
+		padding      : 0px 10px;
+		&.active {
+			width            : inherit;
+			color            : @text-color-selected;
+			background-color : @tab-background-color-active;
+			.title {
+				padding : 0px !important;
+			}
+		}
+		&:last-child {
+			border-right: none !important;
+		}
+	}
+}

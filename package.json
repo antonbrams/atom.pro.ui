@@ -1,0 +1,12 @@
+{
+  "name": "pro-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "simple adaptive theme",
+  "keywords": ["ui", "theme", "pro", "antonkluev", "adaptive"],
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

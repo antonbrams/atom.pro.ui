@@ -1,0 +1,70 @@
+
+// Panels
+// -------------------
+
+// Overrides: atom/static/panels.less
+
+.panel-heading {
+	border-bottom: 1px solid @panel-heading-border-color;
+	background-color: @panel-heading-background-color;
+}
+
+.inset-panel {
+	border-radius: 0px;
+	background-color: @inset-panel-background-color;
+	.panel-heading {
+		background-color: lighten(@inset-panel-background-color, 4%);
+	}
+}
+
+atom-pane-resize-handle {
+	&.vertical {
+		margin-top: 1px;
+		background: @base-border-color;
+	}
+}
+
+
+// Modal -------------------
+// Used on top of the editor, like the Command Palette.
+
+atom-panel.modal {
+	margin-top    : 10%;
+	border        : none !important;
+	background    : none;
+	box-shadow    : none !important;
+	&:before {
+		content    : '';
+		position   : fixed;
+		left       : 0px;
+		right      : 0px;
+		top        : 0px;
+		bottom     : 0px;
+		background : fade(@base-background-color, 90%);
+	}
+	.selected {
+		border-radius : max(2px, @component-border-radius / 2);
+	}
+	.key-binding {
+		background : @ui-site-color-1;
+		color      : @base-background-color;
+	}
+	atom-text-editor[mini] {
+		background-color: transparent;
+	}
+	& > div > atom-text-editor[mini]:before {
+		position     : relative;
+		font-family  : "Octicons Regular";
+		font-size    : 20px;
+		content      : "\f011";
+		margin-right : 10px;
+		color        : @ui-site-color-1;
+		-webkit-font-smoothing : antialiased;
+	}
+	& > .command-palette 	> atom-text-editor[mini]:before { content: "\f0c8"; }
+	& > .encoding-selector 	> atom-text-editor[mini]:before { content: "\f094"; }
+	& > .grammar-selector 	> atom-text-editor[mini]:before { content: "\f010"; }
+	& > .symbols-view 		> atom-text-editor[mini]:before { content: "\f0c0"; }
+	& > .fuzzy-finder 		> atom-text-editor[mini]:before { content: "\f02e"; }
+	& > .diff-list-view 	> atom-text-editor[mini]:before { content: "\f0d6"; }
+}
