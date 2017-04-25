@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "simple adaptive theme",
   "keywords": ["ui", "theme", "pro", "antonkluev", "adaptive"],
-  "repository": "",
+  "repository": "https://github.com/antonkluev/atom.pro.ui.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
