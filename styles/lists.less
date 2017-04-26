@@ -7,52 +7,48 @@
 
 // List Group -------------------
 .list-group {
-  li {
-    padding-left: @component-padding/2;
-
-    // We want to highlight the background of the list items because we dont know their size.
-    &.selected {
-      color: @text-color-selected;
-      background-color: @background-color-selected;
-      &:before{ display: none; }
-    }
-  }
+	li {
+		padding-left: @component-padding/2;
+		
+		// We want to highlight the background of the list items because we dont know their size.
+		&.selected {
+			color: @text-color-selected;
+			background-color: @background-color-selected;
+			&:before{ display: none; }
+		}
+	}
 }
-
-
-// List Tree -------------------
-.list-tree {
-  .selected {
-    color: @text-color-selected;
-  }
-}
-
 
 // Select List -------------------
 .select-list {
-  li {
-    padding: @component-padding/2 @component-padding;
-  }
-  .status {
-    float: right;
-  }
+	li {
+		padding       : @component-padding/2 @component-padding;
+		border-radius : max(2px, @component-border-radius / 2);
+		&.selected {
+			background-color : @ui-site-color-1;
+			color            : @base-background-color;
+			.character-match {color : black;}
+		}
+		&:not(.selected) .character-match {color : white;}
+	}
+	.status {
+		float: right;
+	}
 }
 
 
 // Popover List -------------------
 // Used as a popover for something like autocomplete.
 .select-list.popover-list {
-  @popover-list-padding: @component-padding/2;
-
-  padding: @popover-list-padding;
-  border-radius: @component-border-radius;
-  background-color: @overlay-background-color;
-  box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
-
-  .list-group {
-    margin-top: @popover-list-padding;
-    li {
-      padding-left: @popover-list-padding;
-    }
-  }
+	@popover-list-padding: @component-padding/2;
+	padding          : @popover-list-padding;
+	border-radius    : @component-border-radius;
+	background-color : @overlay-background-color;
+	box-shadow       : 0 0 20px hsla(0,0%,0%,.3);
+	.list-group {
+		margin-top: @popover-list-padding;
+		li {
+			padding-left: @popover-list-padding;
+		}
+	}
 }

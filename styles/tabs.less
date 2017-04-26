@@ -11,9 +11,7 @@
 	display          : table;
 	table-layout     : fixed;
 	width            : 100%;
-	.placeholder {
-		position: absolute;
-	}
+	.placeholder {position: absolute;}
 	.tab {
 		display      : table-cell;
 		width        : 100%;
@@ -32,8 +30,23 @@
 				padding : 0px !important;
 			}
 		}
+		.close-icon {
+			left    : 10px;
+			right   : auto;
+			top     : 0px;
+			display : none;
+		}
+		&:hover .close-icon {display: block;}
 		&.modified {
-			font-weight: bold;
+		 	.close-icon {
+				display : block;
+				top     : 10px !important;
+				left    : 11px;
+			}
+		 	&:hover .close-icon {
+				top  : 0px !important;
+				left : 9px;
+			}
 		}
 		&:last-child {
 			border-right: none !important;
