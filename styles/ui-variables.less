@@ -38,26 +38,27 @@
 @base-border-color:     @syntax-background-color;
 
 // Component colors
+@tool-panel-background-color      : @base-background-color;
+@tool-panel-border-color          : @base-border-color;
 
+@inset-panel-background-color     : lighten(@base-background-color, 4%);
+@inset-panel-border-color         : @base-border-color;
 
-@tool-panel-background-color: @base-background-color;
-@tool-panel-border-color:     @base-border-color;
+@panel-heading-background-color   : lighten(@base-background-color, 10%);
+@panel-heading-border-color       : @base-background-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color:     @base-border-color;
+@overlay-background-color         : lighten(@base-background-color, 5%);
+@overlay-border-color             : @base-border-color;
 
-@panel-heading-background-color: lighten(@base-background-color, 10%);
-@panel-heading-border-color: @base-background-color;
+@button-background-color          : lighten(@base-background-color, 10%);
+@button-background-color-hover    : lighten(@button-background-color, 12%);
+@button-background-color-selected : @button-background-color-hover;
+@button-border-color              : @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
-@button-background-color-selected: @button-background-color-hover;
-@button-border-color:              @base-border-color;
-
-@tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @base-border-color;
-@tab-background-color-active: @syntax-background-color;
-@tab-border-color:            @base-border-color;
+@tab-bar-background-color         : @base-background-color;
+@tab-bar-border-color             : @base-border-color;
+@tab-background-color-active      : @syntax-background-color;
+@tab-border-color                 : @base-border-color;
 
 // Site colors
 @ui-site-color-1: hsl(210, 100%, 60%); // blue
