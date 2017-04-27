@@ -19,8 +19,15 @@
 			display: none !important;
 		}
 	}
-	.project-root > .header .icon-file-directory {
-		&:before {content: '\f001';}
+	.project-root-header {
+		padding : 10px 0px;
+		.icon-repo {
+			color       : white;
+			font-size   : 20px !important;
+			font-weight : lighter;
+			margin-left : -20px;
+			&:before {content: '';}
+		}
 	}
 	.list-nested-item.selected:before,
 	.list-item.selected:before, {
