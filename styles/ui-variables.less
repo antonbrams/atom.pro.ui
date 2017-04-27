@@ -13,31 +13,30 @@
 @import "syntax-variables";
 
 // Text Colors
-@text-color:           hsl(207,10%,60%);
-@text-color-subtle:    hsl(207,10%,50%);
-@text-color-highlight: hsl(207,10%,90%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color           : hsl(207,10%,60%);
+@text-color-subtle    : hsl(207,10%,50%);
+@text-color-highlight : hsl(207,10%,90%);
+@text-color-selected  : hsl(0,0%,100%);
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info    : hsl(219, 79%, 66%);
+@text-color-success : hsl(140, 44%, 62%);
+@text-color-warning : hsl( 36, 60%, 72%);
+@text-color-error   : hsl( 9, 100%, 64%);
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-info    : hsl(208, 100%, 50%);
+@background-color-success : hsl(160,  70%, 36%);
+@background-color-warning : hsl( 32,  60%, 50%);
+@background-color-error   : hsl(  0,  70%, 50%);
 
-@background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+// component colors
+@background-color-highlight       : lighten(@base-background-color, 5%);
+@background-color-selected        : lighten(@base-background-color, 10%);
+@app-background-color             : darken(@base-background-color, 5%);
 
-// Base colors
-@base-background-color: darken(@syntax-background-color, 3%);
-@base-border-color:     @syntax-background-color;
+@base-background-color 		      : darken(@syntax-background-color, 3%);
+@base-border-color 			      : @syntax-background-color;
 
-// Component colors
 @tool-panel-background-color      : @base-background-color;
 @tool-panel-border-color          : @base-border-color;
 
@@ -46,9 +45,7 @@
 
 @panel-heading-background-color   : lighten(@base-background-color, 10%);
 @panel-heading-border-color       : @base-background-color;
-
-@overlay-background-color         : lighten(@base-background-color, 5%);
-@overlay-border-color             : @base-border-color;
+@input-background-color           : @app-background-color;
 
 @button-background-color          : lighten(@base-background-color, 10%);
 @button-background-color-hover    : lighten(@button-background-color, 12%);
@@ -61,18 +58,23 @@
 @tab-border-color                 : @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(210, 100%, 60%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-1 : hsl(210, 100%, 60%); // blue
+@ui-site-color-2 : hsl(160, 70%, 42%); // green
+@ui-site-color-3 : hsl(32, 60%, 50%); // orange
+@ui-site-color-4 : #D831B0; // pink
+@ui-site-color-5 : #EBDD5B; // yellow
 
 // Sizes
 @font-size             : 12px;
 @input-font-size       : 12px;
 @disclosure-arrow-size : 12px;
 @tab-height            : 28px;
-@component-padding     : 10px;
 
 // Misc
-@font-family: 'SF UI Text', 'Lucida Grande', 'Segoe UI', 'Ubuntu', 'Cantarell', 'sans-serif';
+@font-family: 
+	'SF UI Text', 
+	'Lucida Grande', 
+	'Segoe UI', 
+	'Ubuntu', 
+	'Cantarell', 
+	'sans-serif';
