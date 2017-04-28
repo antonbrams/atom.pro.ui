@@ -30,12 +30,12 @@
 @background-color-error   : hsl(  0,  70%, 50%);
 
 // component colors
-@background-color-highlight       : lighten(@base-background-color, 5%);
-@background-color-selected        : lighten(@base-background-color, 10%);
-@app-background-color             : darken(@base-background-color, 5%);
-
 @base-background-color 		      : darken(@syntax-background-color, 3%);
 @base-border-color 			      : @syntax-background-color;
+
+@background-color-highlight       : lighten(@base-background-color, 5%);
+@background-color-selected        : lighten(@base-background-color, 10%);
+@app-background-color             : @base-background-color;
 
 @tool-panel-background-color      : @base-background-color;
 @tool-panel-border-color          : @base-border-color;
