@@ -5,6 +5,16 @@
 // Used to explore and open files in the current project.
 // Overrides: atom/tree-view
 
+atom-dock .tab-bar {
+	display: none;
+}
+.atom-dock-resize-handle.left {
+	width : 0px;
+}
+.atom-dock-toggle-button {
+	display: none;
+}
+
 .tree-view {
 	li.list-item {
 		margin-left: 10px !important;
@@ -12,6 +22,9 @@
 	}
 	.icon-file-directory {
 		color: @ui-site-color-1;
+	}
+	.project-root:before {
+		height : 48px;
 	}
 	.header {
 		margin-left: 10px;
