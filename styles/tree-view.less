@@ -9,10 +9,12 @@ atom-dock .tab-bar {
 	display: none;
 }
 
-.no-title-bar:not(.fullscreen).custom-title-bar > atom-workspace atom-panel-container.left {
-	margin-top   : 0px;
-	padding-top  : 28px;
+atom-workspace atom-panel-container.left {
 	border-right : 1px @base-border-color solid;
+	.no-title-bar:not(.fullscreen).custom-title-bar > & {
+	   	margin-top   : 0px;
+	   	padding-top  : 28px;
+	}
 }
 
 .tree-view {
