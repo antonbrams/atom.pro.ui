@@ -1,5 +1,46 @@
 
-.btn-issue,
-.btn-success {
-	color : @text-color-selected !important;
+.btn,
+.form-control,
+.package-card {
+	border-radius: 4px !important;
+	border-color: @text-color-subtle !important;
+	border-width: 1px !important;
+	border-style: solid !important;
+}
+
+.package-card {
+	background: @syntax-background-color;
+}
+
+.btn {
+	line-height: 24px;
+	&.active-syntax-settings {
+		height: 31px;
+		line-height: 33px;
+	}
+	&.btn-issue,
+	&.btn-success {
+		color : @text-color-selected !important;
+	}
+	&.icon-link-external {
+		padding: 0px 9px;
+	}
+}
+
+.btn-group {
+	& > .btn:first-child:not(:last-child) {
+		border-top-right-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+	& > .btn:last-child:not(:first-child) {
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+	}
+	& > .btn:not(:first-child):not(:last-child) {
+		border-radius: 0 !important;
+	}
+}
+
+.badge {
+	background: @background-color-info;
 }

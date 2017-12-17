@@ -1,36 +1,24 @@
-
-// UI Variables
-// -------------------
-
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
 @import "syntax-variables";
 
 // Text Colors
+@text-color-subtle    : hsl(207,10%,40%);
 @text-color           : hsl(207,10%,60%);
-@text-color-subtle    : hsl(207,10%,50%);
 @text-color-highlight : hsl(207,10%,90%);
 @text-color-selected  : hsl(0,0%,100%);
 
-@text-color-info    : hsl(219, 79%, 66%);
-@text-color-success : hsl(140, 44%, 62%);
+@text-color-info    : #85C1E9;
+@text-color-success : hsl(100, 70%, 62%);
 @text-color-warning : hsl( 36, 60%, 72%);
 @text-color-error   : hsl( 9, 100%, 64%);
 
 // Background colors
-@background-color-info    : hsl(208, 100%, 50%);
-@background-color-success : hsl(160,  70%, 36%);
+@background-color-info    : hsl(200, 100%, 50%);
+@background-color-success : hsl(100, 70%, 62%);
 @background-color-warning : hsl( 32,  60%, 50%);
 @background-color-error   : hsl(  0,  70%, 50%);
 
 // component colors
-@base-background-color 		      : lighten(@syntax-background-color, 2%);
+@base-background-color 		      : lighten(@syntax-background-color, 3%);
 @base-border-color 			      : @syntax-background-color;
 
 @background-color-highlight       : lighten(@base-background-color, 5%);
@@ -60,11 +48,11 @@
 @tab-border-color                 : @base-border-color;
 
 // Site colors
-@ui-site-color-1 : hsl(210, 100%, 60%); // blue
-@ui-site-color-2 : hsl(160, 70%, 42%); // green
-@ui-site-color-3 : hsl(32, 60%, 50%); // orange
-@ui-site-color-4 : #D831B0; // pink
-@ui-site-color-5 : #EBDD5B; // yellow
+@ui-site-color-1 : hsl(200, 100%, 50%);
+@ui-site-color-2 : hsl(100, 70%, 62%);
+@ui-site-color-3 : hsl(32, 60%, 50%);
+@ui-site-color-4 : #D831B0;
+@ui-site-color-5 : #EBDD5B;
 
 // Sizes
 @font-size             : 12px;

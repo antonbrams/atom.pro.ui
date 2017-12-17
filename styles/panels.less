@@ -1,8 +1,4 @@
 
-// Panels
-// -------------------
-
-// Overrides: atom/static/panels.less
 .panel-heading {
 	border-bottom: 1px solid @panel-heading-border-color;
 	background-color: @panel-heading-background-color;
@@ -23,8 +19,6 @@ atom-pane-resize-handle {
 	}
 }
 
-// Modal -------------------
-// Used on top of the editor, like the Command Palette.
 atom-panel.modal {
 	margin-top    : 10%;
 	border        : none !important;
@@ -42,7 +36,7 @@ atom-panel.modal {
 	.event {
 		&.selected {
 			border-radius    : max(2px, @component-border-radius / 2);
-			background-color : @ui-site-color-1;
+			background-color : @background-color-info;
 			color            : @base-background-color;
 			.character-match {color : black;}
 		}
@@ -57,7 +51,7 @@ atom-panel.modal {
 		font-size    : 20px;
 		content      : "\f011";
 		margin-right : 10px;
-		color        : @ui-site-color-1;
+		color        : @background-color-info;
 		-webkit-font-smoothing : antialiased;
 	}
 	& > .command-palette 	> atom-text-editor[mini]:before { content: "\f0c8"; }

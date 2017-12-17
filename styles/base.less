@@ -1,22 +1,23 @@
 
-// Base
-// -------------------
-
-// Used for global styles
-// Or to override certain Atom core styles
-
-// -------------------
-
-
 body {
 	font-size        : @font-size;
 	color            : @text-color;
 	background-color : @app-background-color;
 }
 
+.one-vibrancy {
+	body {
+		background-color: transparent !important;
+	}
+	.no-title-bar-left-dock-workaround {
+		background-color: @app-background-color;
+	}
+}
+
 // atom-workspace > atom-workspace-axis > atom-workspace-axis:nth-child(2) {
 // 	border-left: 1px solid @tab-border-color;
 // }
+
 atom-pane {
 	border-right: 1px solid @base-background-color;
 	&:last-child {
